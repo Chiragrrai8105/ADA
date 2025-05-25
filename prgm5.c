@@ -2,7 +2,7 @@
 int max(int,int);
 int dynamicknap(int n,int m,int p[],int w[])
 {
-if(n==1||m==0)
+if(n==0||m==0)
 return 0;
 if(w[n-1]>m)
 return dynamicknap(n-1,m,p,w);
